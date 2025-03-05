@@ -3,44 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/images/ButtonsMenu/Logo.svg" type="image/x-icon">
     <title>AluraBooks | Community</title>
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <div class="container-left">
-                <div class="nav-menu">
-                    <span class="material-symbols-outlined">menu</span>
-                    <span class="material-symbols-outlined">warning</span>
-                </div>
-                <div class="nav-notify"></div>
-            </div>
-            <div class="container-right">
-                <div class="nav-icons">
-                    <span class="material-symbols-outlined">favorite</span>
-                    <span class="material-symbols-outlined">shopping_bag</span>
-                    <span class="material-symbols-outlined">account_circle</span>
-                </div>
-            </div>
-        </nav>
-        <section class="search-lecture banner">
-            <div class="search-lecture_text-box">
-                <p class="highlight-text">Já sabe por onde começar?</p>
-                <p>Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
-            </div>
-            <div class="search-lecture_search-box">
-                <label for="search" class="material-symbols-outlined">search</label>
-                <input type="text" name="search" id="search" placeholder="Qual será sua próxima leitura?">
-            </div>
-        </section>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" class="container__chk" id="menu">
+            <label for="menu">
+                <span class="cabecalho__expansive-menu container__icon"></span>
+            </label>
+            <menu class="menu-list">
+                <li class="menu-list__title">Categorias</li>
+                <li class="menu-list__item">
+                    <a href="#" class="menu-list__link">Programação</a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#" class="menu-list__link">Front-end</a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#" class="menu-list__link">Infraestrutura</a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#" class="menu-list__link">Business</a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#" class="menu-list__link">Design & UX</a>
+                </li>
+            </menu>
+            <img src="./assets/images/ButtonsMenu/Logo.svg" class="container__icon" alt="Logo da AluraBooks">
+        </div>
+        <div class="container">
+            <a href="#"><img class="container__icon" src="assets/images/ButtonsMenu/Favoritos.svg" alt="Meus favoritos"></a>
+            <a href="#"><img class="container__icon" src="assets/images/ButtonsMenu/Compras.svg" alt="Minha sacola"></a>
+            <a href="#"><img class="container__icon" src="assets/images/ButtonsMenu/Usuario.svg" alt="Meu perfil"></a>
+        </div>
     </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
 </body>
 </html>
