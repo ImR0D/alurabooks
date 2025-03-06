@@ -1,0 +1,79 @@
+.carrousel {
+
+}
+
+.carrousel__title {
+    color: var(--orange);
+    background-color: var(--white);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 0.5em 0;
+}
+.swiper-slide {
+    transition: 500ms;
+}
+
+.swiper-slide img {
+    width: 100%;
+    padding: 0 0 3px 0;
+    filter: drop-shadow(0px 0px 9px #000);
+}
+
+.swiper-pagination {
+    position: relative;
+    padding: 1em 0 0.25em 0;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    display: none;
+}
+
+.swiper-slide {
+    opacity: 0.2;
+    transition: 500ms;
+    position: relative;
+    user-select: none;
+}
+
+.swiper-slide-active {
+    opacity: 1;
+    transition: 500ms;
+}
+
+.swiper-slide .swiper-explainable {
+    display: none;
+}
+.swiper-slide-active .swiper-explainable {
+    display: block;
+}
+
+.swiper-explainable {
+    display: flex;
+    flex-direction: row;
+    top: 100%;
+    width: 100vw;
+    background-color: var(--white);
+    margin: 15px 0px 15px 0px;
+    padding: 35px 10% 35px 10%;
+    text-align: center;
+    font-family: var(--text-font);
+}
+
+.swiper-explainable__title {
+    font-weight: 800;
+}
+
+.swiper-explainable__subtitle {
+    font-weight: 500;
+    line-height: 1.75em;
+}
+
+.swiper-explainable__text {
+    padding: 1em 0 1em 0;
+    font-weight: 300;
+    font-size: medium;
+    text-align: justify;
+    text-shadow: 0px 0px 2px #00f;
+}

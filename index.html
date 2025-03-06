@@ -2,10 +2,11 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="assets/images/ButtonsMenu/Logo.svg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="shortcut icon" href="assets/images/ButtonsMenu/Logo.svg" type="image/x-icon">
     <title>AluraBooks | Community</title>
 </head>
 <body>
@@ -41,10 +42,148 @@
             <a href="#"><img class="container__icon" src="assets/images/ButtonsMenu/Usuario.svg" alt="Meu perfil"></a>
         </div>
     </header>
-    <main class="banner">
-        <h2 class="banner__title">Já sabe por onde começar?</h2>
-        <p class="banner__text">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
-        <input type="search" class="banner__search" placeholder="Qual será sua próxima leitura?">
+    <main>
+        <section class="banner">
+            <h2 class="banner__title">Já sabe por onde começar?</h2>
+            <p class="banner__text">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+            <input type="search" class="banner__search" placeholder="Qual será sua próxima leitura?">
+        </section>
+        <section class="carrousel">
+            <h2 class="carrousel__title">Novos lançamentos</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <div class="swiper-pagination"></div>
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="assets/images/Books/Acessibilidade.svg" alt="Livro Acessibilidade na Web: Boas práticas para construir sites e aplicações acessíveis">
+                            <div class="swiper-explainable">
+                                <h2 class="swiper-explainable__title">Acessibilidade na Web</h2>
+                                <h3 class="swiper-explainable__subtitle">Práticas para construir sites e aplicações acessíveis</h3>
+                                <p class="swiper-explainable__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nam sequi quo harum architecto minima sint blanditiis tenetur possimus, 
+                                    adipisci sed accusantium distinctio dignissimos molestiae optio animi amet! Cupiditate temporibus, natus nesciunt saepe sint hic excepturi 
+                                    iure distinctio! Aliquid ea odio blanditiis provident porro eligendi ex nesciunt, hic cumque repellat.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/Books/ApacheKafka.svg" alt="Livro Apache Kafka e Spring Boot: Comunicação assíncrona entre microserviços">
+                            <div class="swiper-explainable">
+                                <h2 class="swiper-explainable__title">Apache Kafka e Spring Boot</h2>
+                                <h3 class="swiper-explainable__subtitle">Comunicação assíncrona entre microserviços</h3>
+                                <p class="swiper-explainable__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nam sequi quo harum architecto minima sint blanditiis tenetur possimus, 
+                                    adipisci sed accusantium distinctio dignissimos molestiae optio animi amet! Cupiditate temporibus, natus nesciunt saepe sint hic excepturi 
+                                    iure distinctio! Aliquid ea odio blanditiis provident porro eligendi ex nesciunt, hic cumque repellat.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/Books/Guia Front-end.svg" alt="Livro Guia Front-End: O caminho das pedras para ser um dev Front-End">
+                            <div class="swiper-explainable">
+                                <h2 class="swiper-explainable__title">Guia Front-End</h2>
+                                <h3 class="swiper-explainable__subtitle">O caminho das pedras para ser um dev Front-End</h3>
+                                <p class="swiper-explainable__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nam sequi quo harum architecto minima sint blanditiis tenetur possimus, 
+                                    adipisci sed accusantium distinctio dignissimos molestiae optio animi amet! Cupiditate temporibus, natus nesciunt saepe sint hic excepturi 
+                                    iure distinctio! Aliquid ea odio blanditiis provident porro eligendi ex nesciunt, hic cumque repellat.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/Books/Javascript.svg" alt="Livro JavaScript Assertivo: Testes e qualidade de código em todas as camadas da aplicação">
+                            <div class="swiper-explainable">
+                                <h2 class="swiper-explainable__title">JavaScript Assertivo</h2>
+                                <h3 class="swiper-explainable__subtitle">Testes e qualidade de código em todas as camadas da aplicação</h3>
+                                <p class="swiper-explainable__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nam sequi quo harum architecto minima sint blanditiis tenetur possimus, 
+                                    adipisci sed accusantium distinctio dignissimos molestiae optio animi amet! Cupiditate temporibus, natus nesciunt saepe sint hic excepturi 
+                                    iure distinctio! Aliquid ea odio blanditiis provident porro eligendi ex nesciunt, hic cumque repellat.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/Books/Lideranca.svg" alt="Livro Liderança em Design: Habilidades de gestão para alavancar sua carreira">
+                            <div class="swiper-explainable">
+                                <h2 class="swiper-explainable__title">Liderança em Design</h2>
+                                <h3 class="swiper-explainable__subtitle">Habilidades de gestão para alavancar sua carreira</h3>
+                                <p class="swiper-explainable__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nam sequi quo harum architecto minima sint blanditiis tenetur possimus, 
+                                    adipisci sed accusantium distinctio dignissimos molestiae optio animi amet! Cupiditate temporibus, natus nesciunt saepe sint hic excepturi 
+                                    iure distinctio! Aliquid ea odio blanditiis provident porro eligendi ex nesciunt, hic cumque repellat.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/Books/Portugol.svg" alt="Livro Lógica de programação com Portugol: Mais de 80 exemplos, 55 exercícios com gabarito e vídeos complementares">
+                            <div class="swiper-explainable">
+                                <h2 class="swiper-explainable__title">Lógica de programação com Portugol</h2>
+                                <h3 class="swiper-explainable__subtitle">Mais de 80 exemplos, 55 exercícios com gabarito e vídeos complementares</h3>
+                                <p class="swiper-explainable__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nam sequi quo harum architecto minima sint blanditiis tenetur possimus, 
+                                    adipisci sed accusantium distinctio dignissimos molestiae optio animi amet! Cupiditate temporibus, natus nesciunt saepe sint hic excepturi 
+                                    iure distinctio! Aliquid ea odio blanditiis provident porro eligendi ex nesciunt, hic cumque repellat.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+            </div>
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper('.swiper', {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                    effect: 'slide', // 'slide', 'fade', 'cube', 'coverflow', 'flip', 'creative' or 'cards'
+                    focusableElements: 'swiper-explainable',
+                    direction: 'horizontal',
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                        type: 'bullets',
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    // autoplay: {
+                    //     delay: 5000,
+                    // },
+                    breakpoints: {
+                        0: {
+                            slidesPerView: 2,
+                        },
+                        428: {
+                            slidesPerView: 3,
+                        },
+                        1728: {
+                            slidesPerView: 4,
+                        },
+                    },
+                    on: {
+                        click: true,
+                    }        
+                });
+
+                swiper.on('click', function(){
+                    const clickedElement = swiper.clickedSlide;
+                    var targetElement = clickedElement;
+                    if (clickedElement.classList.contains('swiper-slide-active')) {
+                        targetElement = swiper.clickedSlide.children[1];
+                        console.log(targetElement.classList);
+                    }
+                })
+            </script>
+        </section>
     </main>
+    
 </body>
+
 </html>
