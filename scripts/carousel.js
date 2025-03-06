@@ -30,7 +30,7 @@ var swiper = new Swiper('.swiper', {
     on: {
         click: true,
     }        
-});
+})[0];
 
 swiper.on('click', function(){
     const clickedElement = swiper.clickedSlide;
@@ -44,6 +44,7 @@ swiper.on('click', function(){
         }
     }
 });
+
 swiper.on('slideChangeTransitionStart', function () {
     const clickedElement = swiper.clickedSlide;
     var targetElement = clickedElement;
@@ -53,12 +54,15 @@ swiper.on('slideChangeTransitionStart', function () {
         }
     });
 });
+
 swiper.on('slideChangeTransitionEnd', function () {
     const clickedElement = swiper.clickedSlide;
     var targetElement = clickedElement;
     swiper.slides.forEach(element => {
-        if (element.classList.contains('swiper-slide-prev') || element.classList.contains('swiper-slide-next')) {
-            element.children[1].classList.add('hidden-element');
+        if (element.children.length > 0) {
+            if (element.classList.contains('swiper-slide-prev') || element.classList.contains('swiper-slide-next')) {
+                element.children[1].classList.add('hidden-element');
+            }   
         }
     });
 });

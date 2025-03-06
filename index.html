@@ -48,10 +48,10 @@
             <p class="banner__text">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
             <input type="search" class="banner__search" placeholder="Qual será sua próxima leitura?">
         </section>
-        <section class="carrousel">
-            <h2 class="carrousel__title">Novos lançamentos</h2>
+        <section class="carousel">
+            <h2 class="carousel__title">Novos lançamentos</h2>
             <!-- Slider main container -->
-            <div class="swiper">
+            <div class="swiper swiper-releases">
                 <div class="swiper-pagination"></div>
                     <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -144,6 +144,67 @@
                     </div>
                     <!-- 2ª coluna -->
                     <img class="description__book-highlight" src="assets/images/Books/Angular.svg" alt="Livro Angular 11 e Firebase">
+                </div>
+
+                <!-- 2ª linha -->
+                <div class="card__buttons">
+                    <!-- 1ª coluna -->
+                    <ul class="buttons">
+                        <li class="buttons__item">
+                            <img src="assets/images/ButtonsMenu/Favoritos.svg" alt="Adicionar livro aos favoritos"></img>
+                        </li>
+                        <li class="buttons__item">
+                            <img src="assets/images/ButtonsMenu/Compras.svg" alt="Adicionar livro ao carrinho de compras"></img>
+                        </li>
+                    </ul>
+                    <!-- 2ª coluna -->
+                    <a href="#" class="buttons__link">Saiba mais</a>
+                </div>
+            </div>
+        </section>
+        <section class="carousel">
+            <h2 class="carousel__title">Mais vendidos</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <div class="swiper-pagination"></div>
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="assets/images/Books/Acessibilidade.svg" alt="Livro Acessibilidade na Web: Boas práticas para construir sites e aplicações acessíveis">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/Books/ApacheKafka.svg" alt="Livro Apache Kafka e Spring Boot: Comunicação assíncrona entre microserviços">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/Books/Guia Front-end.svg" alt="Livro Guia Front-End: O caminho das pedras para ser um dev Front-End">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/Books/Javascript.svg" alt="Livro JavaScript Assertivo: Testes e qualidade de código em todas as camadas da aplicação">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/Books/Lideranca.svg" alt="Livro Liderança em Design: Habilidades de gestão para alavancar sua carreira">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/Books/Portugol.svg" alt="Livro Lógica de programação com Portugol: Mais de 80 exemplos, 55 exercícios com gabarito e vídeos complementares">
+                        </div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+            </div>
+            <div class="card">
+                <!-- 1ª linha -->
+                <div class="card__description">
+                    <!-- 1ª coluna -->
+                    <div class="description">
+                        <span class="description__review"><img src="assets/images/ButtonsMenu/Estrelinhas.svg" alt=""></span>
+                        <h3 class="description__title">Autora do mês</h3>
+                        <h2 class="description__book-title">Juliana Agarikov</h2>
+                        <p class="description__text">Analista de sistemas e escritora, Juliana é especialista em Front-End</p>
+                    </div>
+                    <!-- 2ª coluna -->
+                    <img class="description__book-highlight" src="assets/images/Writers/Escritora.svg" alt="Autora do mês: Juliana Agarikov">
                 </div>
 
                 <!-- 2ª linha -->
