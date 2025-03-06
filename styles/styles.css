@@ -4,7 +4,7 @@
 /* Importar estilos */
 @import url("header.css");
 @import url("banner.css");
-@import url("carrousel.css");
+@import url("carousel.css");
 
 /*
     FONTS:
@@ -27,6 +27,7 @@
     --gradient-background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --white: #FFFFFFFF;
     --orange: #EB9B00FF;
+    --blue: #002F52FF;
 }
 
 * {

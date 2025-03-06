@@ -11,8 +11,10 @@
     font-weight: 700;
     padding: 1em 0 0.5em 0;
 }
+.swiper,
+.swiper-pagination,
 .swiper-slide {
-    transition: 500ms;
+    transition: ease 500ms;
 }
 
 .swiper-slide img {
@@ -52,13 +54,15 @@
 .swiper-explainable {
     display: flex;
     flex-direction: row;
-    top: 100%;
     width: 100vw;
     background-color: var(--white);
-    margin: 15px 0px 15px 0px;
-    padding: 35px 10% 35px 10%;
-    text-align: center;
     font-family: var(--text-font);
+    margin: 15px 0px 15px 0px;
+    padding: 35px 30% 35px 30%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 .swiper-explainable__title {
@@ -75,9 +79,70 @@
     font-weight: 300;
     font-size: medium;
     text-align: justify;
-    text-shadow: 0px 0px 2px #00f;
+    text-shadow: 0px 0px 2px var(--blue);
 }
 
 .hidden-element {
     display: none !important;
+}
+
+.card {
+    background: var(--white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em;
+}
+
+.card__description {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: left;
+    width: 70%;
+}
+
+.card__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 1.75em;
+}
+
+.description__title {
+    color: var(--orange);
+    font-weight: 700;
+}
+
+.description__book-title {
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.description__text {
+    font-size: 14px;
+}
+
+.buttons__link {
+    color: var(--white);
+    background-color: var(--orange);
+    padding: 1em 2.2em;
+    text-align: center;
+    font-weight: 700;
+}
+
+.buttons__item {
+    margin: 0.85em 0.5em;
 }
