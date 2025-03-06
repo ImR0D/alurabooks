@@ -1,5 +1,5 @@
 .carrousel {
-
+    display: block;
 }
 
 .carrousel__title {
@@ -76,4 +76,8 @@
     font-size: medium;
     text-align: justify;
     text-shadow: 0px 0px 2px #00f;
+}
+
+.hidden-element {
+    display: none !important;
 }
