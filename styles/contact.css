@@ -9,30 +9,34 @@
 
 .contact__title {
     font-size: 18px;
-    color: var(--blue);
     font-weight: 500;
 }
 
 .contact__text {
-    font-size: 16px;
-    color: var(--blue);
-    font-weight: light;
-    width: 90%;
-    line-height: 1.5em;
-}
-
-.contact__search {
-    display: flex;
-    padding: 1em;
-    border-radius: 24px;
+    width: 90%;   
+    font-weight: 400;
 }
 
 .contact__title,
 .contact__text {
     padding-bottom: 6px;
+    line-height: 1.5em;
+    background-color: var(--blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.contact__search::placeholder {
+
+.contact__email {
+    display: flex;
+    padding: 1em;
+    border-radius: 24px;
+    color: var(--blue);
+    user-select: none;
+}
+
+.contact__email::placeholder {
     display: flex;
     color: var(--blue);
     background: url("../assets/images/ButtonsMenu/Email.svg") no-repeat;

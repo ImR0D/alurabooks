@@ -39,9 +39,22 @@
     user-select: none;
 }
 
+.swiper-slide {
+    cursor: initial;
+}
+
 .swiper-slide-active {
     opacity: 1;
     transition: 500ms;
+    cursor: pointer;
+}
+
+.swiper-slide-next, .swiper-slide-prev {
+    cursor: grab;
+}
+
+.swiper-slide-next:active, .swiper-slide-prev:active {
+    cursor: grabbing;
 }
 
 .swiper-slide .swiper-explainable {
@@ -153,3 +166,16 @@
     width: 90;
     height: 15;
 }
+
+
+
+/* ===================================== MEDIA QUERIES ===================================== */
+@media screen and (max-width: 428px) {
+    
+}
+@media screen and (max-width: 1024px) {
+    
+}
+@media screen and (max-width: 1728px) {
+    
+} 

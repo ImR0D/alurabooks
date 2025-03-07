@@ -2,6 +2,6 @@
     background-color: var(--white);
     border-top: 3px solid #999;
     padding: 1em;
-    min-height: 70px;
+    min-height: 50px;
     font-family: var(--text-font);
 }

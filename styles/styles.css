@@ -24,9 +24,9 @@
     --profile-text-size: 1.25em;
 
     /* COLORS */
-    --background: #EBECEE;
-    --list-background: #454546;
-    --foreground: #141311;
+    --background: #EBECEEFF;
+    --list-background: #454546FF;
+    --foreground: #141311FF;
     --gradient-background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --white: #FFFFFFFF;
     --orange: #EB9B00FF;
@@ -44,8 +44,6 @@ body {
     font-family: var(--text-font);
     font-size: var(--main-text-size);
 }
-
-
 
 
 

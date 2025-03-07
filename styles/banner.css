@@ -33,3 +33,16 @@
     background: url("../assets/images/ButtonsMenu/Lupa.svg") no-repeat;
     background-position:left;
 }
+
+
+
+/* ===================================== MEDIA QUERIES ===================================== */
+@media screen and (max-width: 428px) {
+    
+}
+@media screen and (max-width: 1024px) {
+    
+}
+@media screen and (max-width: 1728px) {
+    
+} 

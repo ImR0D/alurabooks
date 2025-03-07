@@ -75,3 +75,16 @@ ul, li, td, tr, a {
     background-clip: text;
     text-transform: uppercase;
 }
+
+
+
+/* ===================================== MEDIA QUERIES ===================================== */
+@media screen and (max-width: 428px) {
+    
+}
+@media screen and (max-width: 1024px) {
+    
+}
+@media screen and (max-width: 1728px) {
+    
+} 
