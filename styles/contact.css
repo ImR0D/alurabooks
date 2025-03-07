@@ -1,0 +1,46 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1em 1.5em;
+    gap: 0.5em;
+    background-color: var(--white);
+}
+
+.contact__title {
+    font-size: 18px;
+    color: var(--blue);
+    font-weight: 500;
+}
+
+.contact__text {
+    font-size: 16px;
+    color: var(--blue);
+    font-weight: light;
+    width: 90%;
+    line-height: 1.5em;
+}
+
+.contact__search {
+    display: flex;
+    padding: 1em;
+    border-radius: 24px;
+}
+
+.contact__title,
+.contact__text {
+    padding-bottom: 6px;
+}
+
+.contact__search::placeholder {
+    display: flex;
+    color: var(--blue);
+    background: url("../assets/images/ButtonsMenu/Email.svg") no-repeat;
+    background-position: 1em;
+    padding: 3.25em;
+    text-align: left;
+    justify-content: center;
+    align-self: center;
+    font-family: var(--text-font);
+    font-size: 16px;
+}
