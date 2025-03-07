@@ -41,6 +41,7 @@
     transition-delay: 0ms;
     transition-timing-function: ease;
     width: 60vw;
+    z-index: 999;
 }
 
 ul, li, td, tr, a {
@@ -53,6 +54,10 @@ ul, li, td, tr, a {
     background-color: var(--white);
     font-weight: 500;
     font-size: var(--main-text-size);
+}
+
+.menu-list__item:hover {
+    background-color: var(--orange);
 }
 
 .menu-list__title {
