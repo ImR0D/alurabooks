@@ -10,11 +10,11 @@
     <title>AluraBooks | Community</title>
 </head>
 <body>
-    <header class="cabecalho">
+    <header class="head">
         <div class="container">
-            <input type="checkbox" class="container__chk" id="menu">
-            <label for="menu">
-                <span class="cabecalho__expansive-menu container__icon"></span>
+            <input type="checkbox" class="container__chk" id="menu-mobile">
+            <label for="menu-mobile">
+                <span class="head__expansive-menu container__icon"></span>
             </label>
             <menu class="menu-list">
                 <li class="menu-list__title">Categorias</li>
@@ -34,10 +34,36 @@
                     <a href="#" class="menu-list__link">Design & UX</a>
                 </li>
             </menu>
-            <img src="./assets/images/ButtonsMenu/Logo.svg" class="container__icon" alt="Logo da AluraBooks">
+            <img class="container__icon" src="./assets/images/ButtonsMenu/Logo.svg" alt="Logo da AluraBooks">
+            <h1 class="container__title"><strong class="container__title-bold">Alura</strong>Books</h1>
+        </div>
+        <div class="options">
+            <input type="checkbox" class="options__menu" id="menu-tablet">
+            <label for="menu-tablet" class="options__item-category">
+                <li class="options__item">Categorias</li>
+            </label>
+            <menu class="options__menu-list">
+                <li class="menu-list__item">
+                    <a href="#" class="menu-list__link">Programação</a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#" class="menu-list__link">Front-end</a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#" class="menu-list__link">Infraestrutura</a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#" class="menu-list__link">Business</a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#" class="menu-list__link">Design & UX</a>
+                </li>
+            </menu>
+            <li class="options__item"><a href="#" class="options__link">Favoritos</a></li>
+            <li class="options__item"><a href="#" class="options__link">Minha estante</a></li>
         </div>
         <div class="container">
-            <a href="#"><img class="container__icon" src="assets/images/ButtonsMenu/Favoritos.svg" alt="Meus favoritos"></a>
+            <a href="#"><img class="container__icon container__icon__display-schedule" src="assets/images/ButtonsMenu/Favoritos.svg" alt="Meus favoritos"></a>
             <a href="#"><img class="container__icon" src="assets/images/ButtonsMenu/Compras.svg" alt="Minha sacola"></a>
             <a href="#"><img class="container__icon" src="assets/images/ButtonsMenu/Usuario.svg" alt="Meu perfil"></a>
         </div>

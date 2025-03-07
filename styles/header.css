@@ -1,4 +1,4 @@
-.cabecalho {
+.head {
     background-color: var(--white);
     display: flex;
     justify-content: space-between;
@@ -6,7 +6,7 @@
     position: relative;
 }
 
-.cabecalho__expansive-menu {
+.head__expansive-menu {
     width: 24px;
     height: 24px;
     display: inline-block;
@@ -15,10 +15,18 @@
     background-position: center;
 }
 
+.head__expansive-menu:hover {
+    cursor: pointer;
+}
+
 .container {
     display: flex;
     align-items: center;
     padding: 0.7em;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
 }
 
 .container__icon {
@@ -69,22 +77,102 @@ ul, li, td, tr, a {
 }
 
 .menu-list__link {
-    background: var(--gradient--background);
+    background: var(--gradient-background);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: var(--gradient--background);
     background-clip: text;
     text-transform: uppercase;
 }
 
+.container__title {
+    display: none;
+}
 
+.options {
+    display: none;
+}
+
+.container__icon__display-schedule {
+    display: block;
+}
 
 /* ===================================== MEDIA QUERIES ===================================== */
-@media screen and (max-width: 428px) {
+
+@media screen and (min-width: 1024px) {
     
-}
-@media screen and (max-width: 1024px) {
+    .head__expansive-menu {
+        display: none;
+    }
+
+    .container__title, 
+    .container__title-bold {
+        font-family: var(--logo-font);
+        font-size: 30px;
+    }
     
+    .container__title {
+        font-weight: 400;
+        display: block;
+    }
+    
+    .container__title-bold {
+        font-weight: 700;
+    }    
+
+    .options {
+        display: flex;
+    }
+
+    .options__item {
+        padding: 1em;
+        text-transform: uppercase;
+    }
+
+    .options__item:hover {
+        cursor: pointer;
+    }
+
+    .options__link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .container__icon__display-schedule {
+        display: none;
+    }
+    
+    .options__menu-list {
+        position: relative;
+    }
+
+    .options__menu-list, .options__menu {
+        display: none;
+    }
+
+    .options__menu:checked ~ .options__menu-list {
+        position: absolute;
+        top: 70%;
+        z-index: 999;
+        width: auto;
+        display: block;
+    }
+
+    #menu-tablet:checked ~ .options__item-category {
+        background: var(--gradient-background);
+        color: #fff;
+        transition: ease-out 200ms;
+    }
+    
+    .menu-list__item:hover {
+        background-color: var(--blue);
+        transition: ease 300ms;
+    }
+
+    .menu-list__item:hover .menu-list__link {
+        color: #fff;
+    }
+
 }
+
 @media screen and (max-width: 1728px) {
     
 } 

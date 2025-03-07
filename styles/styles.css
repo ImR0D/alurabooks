@@ -43,6 +43,13 @@ body {
     background-color: var(--background);
     font-family: var(--text-font);
     font-size: var(--main-text-size);
+    user-select: none;
+    pointer-events: stroke;
+}
+
+ul, li, tr, td, span, a, dd, dt, dl, p {
+    user-select: auto;
+    pointer-events: stroke;
 }
 
 

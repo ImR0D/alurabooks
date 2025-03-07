@@ -27,7 +27,6 @@
     background-clip: text;
 }
 
-
 .contact__email {
     display: flex;
     padding: 1em;
@@ -48,3 +47,16 @@
     font-family: var(--text-font);
     font-size: 16px;
 }
+
+
+
+/* ===================================== MEDIA QUERIES ===================================== */
+@media screen and (max-width: 428px) {
+    
+}
+@media screen and (max-width: 1024px) {
+    
+}
+@media screen and (max-width: 1728px) {
+    
+} 
