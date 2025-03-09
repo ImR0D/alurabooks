@@ -93,6 +93,7 @@
     font-size: medium;
     text-align: justify;
     text-shadow: 0px 0px 2px var(--blue);
+    line-height: 1.5;
 }
 
 .hidden-element {
@@ -170,12 +171,96 @@
 
 
 /* ===================================== MEDIA QUERIES ===================================== */
-@media screen and (max-width: 428px) {
+@media screen and (min-width: 1024px) {
+    .carousel__title {
+        font-size: 26px;
+    }
+
+    .swiper {
+        position: relative;
+        width: 60%;
+    }
+
+    .swiper-pagination {
+        margin: 2em 0 3em 0;
+    }
     
+    .swiper-button-next, 
+    .swiper-button-prev {
+        display: block;
+        top: 65%;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 8px;
+        background: var(--gradient-background);
+        padding: 12px 15px;
+        border-radius: 100%;
+        position: relative;
+        color: #fff;
+        font-weight: 800;
+        z-index: 9999;
+        opacity: 0.8;
+    }
+
+    .swiper-button-next::after {
+        right: 5px;
+    }
+    .swiper-button-prev::after {
+        right: 5px;
+    }
+
+    .swiper-explainable,
+    .swiper-explainable__title, 
+    .swiper-explainable__subtitle,
+    .swiper-explainable__text {
+        position: relative;
+        display: grid;
+        padding: 1em;
+        margin: 0;
+        width: 60vw;
+        flex-flow: wrap;
+    }
+    .swiper-explainable__title, 
+    .swiper-explainable__subtitle,
+    .swiper-explainable__text {
+        display: block;
+    }
+
+
+    .modal {
+        display: none;
+    }
+
+    .card {
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 50%;
+        margin: 3em auto;
+    }
+
+    .card__description, 
+    .description, 
+    .description__title,
+    .description__text,
+    .description__book-title {
+        width: 100%;
+        padding: 0 0.5em 0 0.1em;
+    }
+
+    .swiper-slide {
+        opacity: 0.3;
+        transition: 500ms;
+        position: relative;
+        user-select: none;
+    }
+
+    .swiper-slide-active, .swiper-slide-next { 
+        opacity: 1;
+    }
 }
-@media screen and (max-width: 1024px) {
-    
-}
-@media screen and (max-width: 1728px) {
+@media screen and (min-width: 1728px) {
     
 } 

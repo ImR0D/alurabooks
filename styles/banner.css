@@ -37,12 +37,17 @@
 
 
 /* ===================================== MEDIA QUERIES ===================================== */
-@media screen and (max-width: 428px) {
-    
+@media screen and (min-width: 1024px) {
+    .banner__title {
+        font-size: 36px;
+    }
+    .banner__search {
+        width: 50%;
+    }
+    .banner__search::placeholder {
+        background-position: 6em;
+    }
 }
-@media screen and (max-width: 1024px) {
-    
-}
-@media screen and (max-width: 1728px) {
+@media screen and (min-width: 1728px) {
     
 } 

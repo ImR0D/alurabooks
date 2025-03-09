@@ -13,14 +13,14 @@ var swiper = new Swiper('.swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    autoplay: {
-        delay: 8000,
-    },
+    // autoplay: {
+    //     delay: 8000,
+    // },
     breakpoints: {
         0: {
-            slidesPerView: 2,
+            slidesPerView: 3,
         },
-        428: {
+        1024: {
             slidesPerView: 3,
         },
         1728: {
@@ -29,7 +29,7 @@ var swiper = new Swiper('.swiper', {
     },
     on: {
         click: true,
-    }        
+    }
 })[0];
 
 swiper.on('click', function(){
@@ -66,3 +66,13 @@ swiper.on('slideChangeTransitionEnd', function () {
         }
     });
 });
+
+
+/*
+    CORREÇÕES NECESSÁRIAS:
+
+    Quando há a transição de um 'small device' para outra dimensão de tamanho,
+    no carrosel, caso tenha sido clicado ou rolado automaticamente o
+    carrosel, o elemento de detalhe '.swiper-explainable' permanece visível.
+
+*/
