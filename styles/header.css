@@ -1,3 +1,7 @@
+header {
+    transition: 0ms !important;
+}
+
 .head {
     background-color: var(--white);
     display: flex;
@@ -95,6 +99,17 @@ ul, li, td, tr, a {
     display: block;
 }
 
+.container__display {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__display-text {
+    display: none;
+}
+
 /* ===================================== MEDIA QUERIES ===================================== */
 
 @media screen and (min-width: 1024px) {
@@ -173,6 +188,14 @@ ul, li, td, tr, a {
 
 }
 
-@media screen and (max-width: 1728px) {
+@media screen and (min-width: 1728px) {
     
+    .container__display {
+        padding: 0 1em 0 1em;
+    }
+
+    .container__display-text {
+        display: block;
+    }
+
 } 
