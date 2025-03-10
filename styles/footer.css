@@ -4,6 +4,7 @@
     padding: 1em;
     min-height: 50px;
     font-family: var(--text-font);
+<<<<<<< HEAD
 }
 
 .list-groups {
@@ -67,3 +68,6 @@
         padding: 3.4em 0 4.3em 1.5em;
     }
 } 
+=======
+}
+>>>>>>> parent of 05674e4 (Added responsive footer layout and added groups of partners)
