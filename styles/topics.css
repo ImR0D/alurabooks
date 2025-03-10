@@ -46,5 +46,29 @@
     }
 }
 @media screen and (min-width: 1728px) {
+
+    .topics {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .topics__title {
+        font-size: 2em;
+        padding: 2em 0 1.5em 0;
+    }
     
+    .topics__item {
+        margin: 3em 1.0em;
+    }
+
+    .topics__link {
+        font-size: 24px;
+        padding: 1.2em;
+    }
+    .topics__list {
+        width: 50%;
+    }
 } 

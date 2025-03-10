@@ -77,5 +77,30 @@
 }
 
 @media screen and (min-width: 1728px) {
+    .contact {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        padding: 4em 9.3em 4em 15em;
+        gap: 2em;
+    }
+
+    .contact__description {
+        width: 100%;
+    }
     
+    .contact__title {
+        font-size: 24px;
+    }
+
+    .contact__text {
+        width: 80%;
+    }
+
+    .contact__email {
+        min-width: 20vw;
+        height: 45px;   
+    }
 } 
