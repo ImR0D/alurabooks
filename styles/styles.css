@@ -31,6 +31,8 @@
     --white: #FFFFFFFF;
     --orange: #EB9B00FF;
     --blue: #002F52FF;
+    --light-gray: #858585;
+    --gray: #474646;
 }
 
 * {
@@ -55,12 +57,12 @@ ul, li, tr, td, span, a, dd, dt, dl, p {
 
 
 /* ===================================== MEDIA QUERIES ===================================== */
-@media screen and (max-width: 428px) {
+@media screen and (min-width: 428px) {
     
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
     
 }
-@media screen and (max-width: 1728px) {
+@media screen and (min-width: 1728px) {
     
 } 
